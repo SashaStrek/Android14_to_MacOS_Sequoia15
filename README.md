@@ -1,4 +1,4 @@
-# Android14_to_MacOS_Sequoia15
+# Android14_to_MacOS_Sequoia15_Using_Terminal
 Instruction on How to Copy Data from an Android 14 Smartphone to macOS Sequoia 15 Using Terminal
 
 Devices are connected with a USB cable.
