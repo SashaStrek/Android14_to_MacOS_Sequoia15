@@ -10,7 +10,7 @@ On the Android 14 Smartphone:
 On the Macbook:
 1. `brew install android-platform-tools` - install the Android Platform Tools
 2. `adb start-server`
-3. `adb devices` - you should see Android device
+3. `adb devices` - you should see your Android device
 4. `adb shell ls /sdcard/` - you should see the not-only-for-root-user directories. Move your files there if you don't want to deal with root permissions.
 5. `adb pull /sdcard/filename /path/to/destination/on/mac` - copy your files!
 6. `adb disconnect` - optional
