@@ -10,19 +10,17 @@ On the Android 14 Smartphone:
 2. Enable USB debugging: Go to `Settings` > `System` > `Developer options` and toggle on `USB debugging`.
 
 On the Macbook:
-1. `brew install android-platform-tools` - install the Android Platform Tools
-2. `adb start-server`
-3. `adb devices` - you should see your Android device
-4. `adb shell ls /sdcard/` - you should see the not-only-for-root-user directories. Move your files there if you don't want to deal with root permissions.
-5. `adb pull /sdcard/filename /path/to/destination/on/mac` - copy your files!
-5.1 It's usually as `adb pull /sdcard/DCIM ~/Pictures/PhoneName`
-5.2 You can delete files on the phone with `adb shell 'rm -rf /sdcard/DCIM/*'`
-5.3 Check the size with `adb shell df -h`
-   /dev/block/dm-** - This is the internal storage  
-   /storage/0000-0000 - This is the physical SD card
-6. Delete non-needed files : `adb shell 'rm -rf /sdcard/DCIM/*'`
-7. `adb disconnect` - optional
-8. `adb kill-server`
-
-9. 
+1. `brew install android-platform-tools` - install the Android Platform Tools  
+2. `adb start-server`  
+3. `adb devices` - you should see your Android device  
+4. `adb shell ls /sdcard/` - you should see the not-only-for-root-user directories. Move your files there if you don't want to deal with root permissions.  
+5. `adb pull /sdcard/filename /path/to/destination/on/mac` - copy your files!  
+5.1 It's usually as `adb pull /sdcard/DCIM ~/Pictures/PhoneName`  
+5.2 You can delete files on the phone with `adb shell 'rm -rf /sdcard/DCIM/*'`  
+5.3 Check the size with `adb shell df -h`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/dev/block/dm-** - This is the internal storage  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/storage/0000-0000 - This is the physical SD card  
+6. Delete non-needed files : `adb shell 'rm -rf /sdcard/DCIM/*'`  
+7. `adb disconnect` - optional  
+8. `adb kill-server`  
 
